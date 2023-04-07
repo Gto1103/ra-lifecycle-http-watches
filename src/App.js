@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import Watches from './components/Watches';
+import moment from 'moment';
 import './App.css';
+
+const dataForm = {
+	name: 'name',
+	timeZone: 'utc'
+}
+
+const items = [{
+	id: '1231431',
+	name: 'Moscow',
+	utc: 3,
+	time: moment(new Date()).locale("ru").utcOffset(3).format('LTS')
+}]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = "App">
+		<Watches dataForm={dataForm} items={items}>
+		</Watches>
     </div>
   );
 }
