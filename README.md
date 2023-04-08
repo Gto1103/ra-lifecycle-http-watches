@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/0rwmdx1tw6rxay8i?svg=true)](https://ci.appveyor.com/project/Gto1103/ra-lifecycle-http-watches)
 
-[Страница проекта](https://gto1103.github.io/ra-forms-steps/)
+[Страница проекта](https://gto1103.github.io/ra-lifecycle-http-watches/)
 
 Мировые часы
 ===
